@@ -1,4 +1,4 @@
-# RxjsWorkshop
+# RxJS Workshop
 
 ## Setup Instructions
 
