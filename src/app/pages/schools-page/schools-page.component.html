@@ -1,0 +1,17 @@
+<div class=" mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div *ngIf="schools$ | async as schools; else schoolsLoading">
+          <ul class="list-group">
+            <li *ngFor="let school of schools" class="list-group-item">{{school.fullName}}</li>
+          </ul>
+        </div>
+
+        <ng-template #schoolsLoading>
+          <p>Loading...</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
