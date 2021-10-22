@@ -18,7 +18,7 @@ export class ApiService {
     );
   }
 
-  courses(query: string, schoolId?: number): Observable<Course[]> {
+  courses(query?: string, schoolId?: number): Observable<Course[]> {
     let queryParams = `?q=${query?.trim() || ''}`;
     if (schoolId) {
       queryParams += `&school=${schoolId}`;
